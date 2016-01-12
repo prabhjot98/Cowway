@@ -24,22 +24,22 @@ public class Cow extends FarmObject {
         int upOrDown = rand.nextInt((1 - 0) + 1) + 0;
         if (XorY == 0) {
             if (upOrDown == 0) {
-                if (getX() != 0) {
-                    setX(getX() - 1);
+                if (super.getX() != 0) {
+                    super.setX(super.getX() - 1);
                 }
             } else {
-                if (getX() != 5) {
-                    setX(getX() + 1);
+                if (super.getX() != 5) {
+                    super.setX(super.getX() + 1);
                 }
             }
         } else {
             if (upOrDown == 0) {
-                if (getY() != 0) {
-                    setY(getY() - 1);
+                if (super.getY() != 0) {
+                    super.setY(super.getY() - 1);
                 }
             } else {
-                if (getY() != 5) {
-                    setY(getY() + 1);
+                if (super.getY() != 5) {
+                    super.setY(super.getY() + 1);
                 }
             }
         }
